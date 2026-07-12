@@ -12,6 +12,8 @@ const links = [
   { href: "/realestate/market-report", title: "Market Report", blurb: "Hyperlocal pricing trends, updated regularly." },
   { href: "/realestate/buyers-guide", title: "Buyer's Guide", blurb: "Why work with a buyer's agent in this market." },
   { href: "/realestate/sellers-guide", title: "What's My Home Worth", blurb: "A real, data-driven valuation \u2014 not a canned estimate." },
+  { href: "/series/academy", title: "Buyer's & Seller's Academy", blurb: "Video lessons on buying and selling in Utah." },
+  { href: "/series/cap-rate", title: "Cap Rate with Lance", blurb: "Investor breakdowns \u2014 what actually pencils in this market." },
 ];
 
 export default function RealEstate() {

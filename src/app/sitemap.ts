@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/realestate/buyers-guide",
     "/realestate/sellers-guide",
     "/realestate/contact",
+    "/testimonials",
     "/blog",
   ].map((path) => ({
     url: `${base}${path}`,

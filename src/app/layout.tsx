@@ -34,7 +34,7 @@ const schema = {
   name: "Lance Anderson",
   alternateName: "Local with Lance",
   url: "https://homesbylance.com",
-  image: "https://drive.google.com/uc?id=1NosHz-mLGpPckIeBhrQpgtwH5YU_Lu6s",
+  image: "https://homesbylance.com/images/lance-headshot.jpg",
   areaServed: [
     { "@type": "Place", name: "Traverse Mountain, Lehi, UT" },
     { "@type": "Place", name: "Utah County, UT" },

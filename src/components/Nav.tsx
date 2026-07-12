@@ -8,6 +8,7 @@ const links = [
   { href: "/#series", label: "Series" },
   { href: "/realestate", label: "Real Estate" },
   { href: "/realestate/traverse-mountain", label: "Traverse Mountain" },
+  { href: "/testimonials", label: "Testimonials" },
   { href: "/blog", label: "Journal" },
   { href: "/realestate/contact", label: "Contact" },
 ];
@@ -17,15 +18,21 @@ export default function Nav() {
 
   return (
     <header className="sticky top-0 z-50 bg-cream/90 backdrop-blur border-b border-navy/10">
+      <a
+        href="tel:+18018605225"
+        className="block bg-cream text-center py-2 text-sm sm:text-base font-bold text-terracotta hover:text-navy transition-colors border-b border-navy/10"
+      >
+        (801) 860-5225
+      </a>
       <div className="contour-rule" />
       <div className="max-w-6xl mx-auto px-5 sm:px-8 flex items-center justify-between h-16">
         <Link href="/" className="flex items-center gap-3 group">
           <Image
-            src="https://drive.google.com/uc?id=1NosHz-mLGpPckIeBhrQpgtwH5YU_Lu6s"
+            src="/images/lance-headshot.jpg"
             alt="Lance Anderson"
             width={36}
             height={36}
-            className="rounded-full border border-navy/15"
+            className="rounded-full border border-navy/15 object-cover h-9 w-9"
           />
           <span className="font-display italic text-lg tracking-tight text-navy">
             Local <span className="text-terracotta not-italic">with Lance</span>

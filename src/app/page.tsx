@@ -1,8 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import { series } from "@/lib/series";
+import { series, categoryLabels } from "@/lib/series";
+import { testimonials } from "@/lib/testimonials";
+import TestimonialCard from "@/components/TestimonialCard";
 
-const logo = "https://drive.google.com/uc?id=1NosHz-mLGpPckIeBhrQpgtwH5YU_Lu6s";
+const headshot = "/images/lance-headshot.jpg";
 
 export default function Home() {
   return (
@@ -39,44 +41,54 @@ export default function Home() {
         <div className="contour-rule" />
       </section>
 
-      {/* Series grid */}
+      {/* Series grid, grouped by category */}
       <section id="series" className="max-w-6xl mx-auto px-5 sm:px-8 py-20">
         <p className="uppercase tracking-[0.2em] text-xs font-semibold text-olive mb-2">The Series</p>
         <h2 className="font-display text-3xl sm:text-4xl mb-12 text-navy">
           Utah, from every angle Lance actually lives.
         </h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {series.map((s) => (
-            <Link
-              key={s.slug}
-              href={`/series/${s.slug}`}
-              className="group rounded-2xl border border-navy/10 bg-white/60 p-6 hover:border-terracotta hover:shadow-lg transition-all"
-            >
-              <span className="text-3xl">{s.emoji}</span>
-              <h3 className="font-display text-xl mt-4 text-navy group-hover:text-terracotta transition-colors">
-                {s.title}
-              </h3>
-              <p className="mt-2 text-sm text-navy/70 leading-relaxed">{s.blurb}</p>
-              <p className="mt-4 text-xs uppercase tracking-wide text-camel font-semibold">
-                {s.channels.join(" \u00B7 ")}
-              </p>
-              <span className="mt-4 inline-block text-sm font-semibold text-terracotta">
-                View &rarr;
-              </span>
-            </Link>
-          ))}
-        </div>
+
+        {(["lifestyle", "real-estate", "investing"] as const).map((cat) => (
+          <div key={cat} className="mb-16 last:mb-0">
+            <h3 className="font-display text-xl italic text-terracotta mb-6">
+              {categoryLabels[cat]}
+            </h3>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {series
+                .filter((s) => s.category === cat)
+                .map((s) => (
+                  <Link
+                    key={s.slug}
+                    href={`/series/${s.slug}`}
+                    className="group rounded-2xl border border-navy/10 bg-white/60 p-6 hover:border-terracotta hover:shadow-lg transition-all"
+                  >
+                    <span className="text-3xl">{s.emoji}</span>
+                    <h4 className="font-display text-xl mt-4 text-navy group-hover:text-terracotta transition-colors">
+                      {s.title}
+                    </h4>
+                    <p className="mt-2 text-sm text-navy/70 leading-relaxed">{s.blurb}</p>
+                    <p className="mt-4 text-xs uppercase tracking-wide text-camel font-semibold">
+                      {s.channels.join(" \u00B7 ")}
+                    </p>
+                    <span className="mt-4 inline-block text-sm font-semibold text-terracotta">
+                      View &rarr;
+                    </span>
+                  </Link>
+                ))}
+            </div>
+          </div>
+        ))}
       </section>
 
       {/* Authority statement */}
       <section className="bg-navy text-cream">
         <div className="max-w-4xl mx-auto px-5 sm:px-8 py-20 text-center">
           <Image
-            src={logo}
+            src={headshot}
             alt="Lance Anderson"
-            width={72}
-            height={72}
-            className="rounded-full mx-auto mb-8 border-2 border-camel"
+            width={112}
+            height={112}
+            className="rounded-full mx-auto mb-8 border-2 border-camel object-cover h-28 w-28"
           />
           <h2 className="font-display text-3xl sm:text-4xl italic mb-6">
             I Know Utah. Better Than Anyone.
@@ -93,7 +105,7 @@ export default function Home() {
           </div>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <a
-              href="mailto:lance@homesbylance.com"
+              href="mailto:lancea141@gmail.com"
               className="rounded-full bg-terracotta px-6 py-3 text-sm font-semibold hover:bg-camel hover:text-navy transition-colors"
             >
               Talk to Lance
@@ -106,6 +118,27 @@ export default function Home() {
             </Link>
           </div>
         </div>
+      </section>
+
+      {/* Testimonials teaser */}
+      <section className="max-w-6xl mx-auto px-5 sm:px-8 py-20">
+        <p className="uppercase tracking-[0.2em] text-xs font-semibold text-olive mb-2">
+          I Let You Do The Talking
+        </p>
+        <h2 className="font-display text-3xl sm:text-4xl mb-10 text-navy">
+          Hear it from the people who worked with Lance.
+        </h2>
+        <div className="grid sm:grid-cols-3 gap-6">
+          {testimonials.slice(0, 3).map((t) => (
+            <TestimonialCard key={t.name} t={t} />
+          ))}
+        </div>
+        <Link
+          href="/testimonials"
+          className="inline-block mt-8 text-sm font-semibold text-terracotta"
+        >
+          See All Testimonials &rarr;
+        </Link>
       </section>
 
       {/* Real estate bridge / lead capture */}
@@ -130,6 +163,31 @@ export default function Home() {
               Get My Free Home Valuation
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Facebook Appreciation Group */}
+      <section className="bg-olive text-cream">
+        <div className="max-w-4xl mx-auto px-5 sm:px-8 py-20 text-center">
+          <p className="uppercase tracking-[0.2em] text-xs font-semibold text-camel mb-4">
+            Clients &amp; Friends
+          </p>
+          <h2 className="font-display text-3xl sm:text-4xl italic mb-6">
+            Join the Client &amp; Friend Appreciation Group
+          </h2>
+          <p className="text-cream/85 leading-relaxed max-w-2xl mx-auto">
+            Local giveaways, first looks at new listings, jerky and lunch recs before they hit the
+            channel, and a real community of Traverse Mountain &amp; Lehi neighbors. Free to join,
+            just good people and good local stuff.
+          </p>
+          <a
+            href="https://www.facebook.com/groups/817743620755776"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-9 inline-block rounded-full bg-terracotta text-cream px-8 py-4 text-sm font-semibold hover:bg-navy transition-colors"
+          >
+            Join the Facebook Group
+          </a>
         </div>
       </section>
     </>

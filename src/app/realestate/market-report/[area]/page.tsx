@@ -64,7 +64,7 @@ export default async function MarketAreaReport({
           Live {item.name} data is on the way. Want a real, current read on your street right now?
         </p>
         <a
-          href={`mailto:lance@homesbylance.com?subject=${encodeURIComponent(
+          href={`mailto:lancea141@gmail.com?subject=${encodeURIComponent(
             `${item.name} Market Report Request`
           )}`}
           className="inline-block rounded-full bg-terracotta text-cream px-6 py-3 text-sm font-semibold hover:bg-navy transition-colors"

@@ -69,7 +69,7 @@ export default function LeadForm({ source = "contact" }: { source?: string }) {
         {status === "sending" ? "Sending\u2026" : "Send to Lance"}
       </button>
       {status === "error" && (
-        <p className="text-sm text-terracotta">Something went wrong &mdash; try again or email lance@homesbylance.com directly.</p>
+        <p className="text-sm text-terracotta">Something went wrong &mdash; try again or email lancea141@gmail.com directly.</p>
       )}
     </form>
   );
