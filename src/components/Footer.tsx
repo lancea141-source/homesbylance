@@ -11,14 +11,7 @@ export default function Footer() {
             Lance Anderson, Realtor &middot; Traverse Mountain / Lehi, UT &middot; URE / WFRMLS
           </p>
           <p className="text-sm text-cream/70 leading-relaxed mt-3">
-            
-              href="https://www.utahrealestate.com/roster/office.listings.report/id/71299"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-terracotta"
-            >
-              Jason Mitchell Real Estate Utah LLC
-            </a>
+            <a href="https://www.utahrealestate.com/roster/office.listings.report/id/71299" target="_blank" rel="noopener noreferrer" className="hover:text-terracotta">Jason Mitchell Real Estate Utah LLC</a>
           </p>
         </div>
         <div className="text-sm">
@@ -33,16 +26,8 @@ export default function Footer() {
         <div className="text-sm">
           <p className="uppercase tracking-wide text-camel mb-3 text-xs font-semibold">Connect</p>
           <ul className="space-y-2 text-cream/80">
-            <li>
-              <a href="tel:+18018605225" className="hover:text-terracotta">
-                (801) 860-5225
-              </a>
-            </li>
-            <li>
-              <a href="mailto:landerson@jasonmitchellgroup.com" className="hover:text-terracotta">
-                landerson@jasonmitchellgroup.com
-              </a>
-            </li>
+            <li><a href="tel:+18018605225" className="hover:text-terracotta">(801) 860-5225</a></li>
+            <li><a href="mailto:landerson@jasonmitchellgroup.com" className="hover:text-terracotta">landerson@jasonmitchellgroup.com</a></li>
             <li><a href="#" className="hover:text-terracotta">YouTube</a></li>
             <li><a href="#" className="hover:text-terracotta">Instagram</a></li>
             <li><a href="#" className="hover:text-terracotta">Facebook</a></li>
@@ -50,8 +35,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-cream/10 py-5 text-center text-xs text-cream/50">
-        &copy; {new Date().getFullYear()} Local with Lance &middot; Lance Anderson, Realtor &middot;
-        Jason Mitchell Real Estate Utah LLC &middot; All rights reserved
+        &copy; {new Date().getFullYear()} Local with Lance &middot; Lance Anderson, Realtor &middot; Jason Mitchell Real Estate Utah LLC &middot; All rights reserved
       </div>
     </footer>
   );
