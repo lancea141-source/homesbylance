@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --terracotta: #C0652A;
+  --olive: #6B7A3A;
+  --navy: #2F3E46;
+  --camel: #C2A178;
+  --cream: #F4EDE4;
+  --background: var(--cream);
+  --foreground: var(--navy);
+}
+
+@theme inline {
+  --color-terracotta: var(--terracotta);
+  --color-olive: var(--olive);
+  --color-navy: var(--navy);
+  --color-camel: var(--camel);
+  --color-cream: var(--cream);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-public-sans);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* Signature texture: topographic contour rule, stands in for the
+   mountain/lake vernacular without becoming a literal icon set */
+.contour-rule {
+  height: 3px;
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--olive) 0px,
+    var(--olive) 10px,
+    transparent 10px,
+    transparent 16px
+  );
+}
+
+.grain {
+  background-image: radial-gradient(rgba(47, 62, 70, 0.035) 1px, transparent 1px);
+  background-size: 3px 3px;
+}

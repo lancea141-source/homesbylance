@@ -1,0 +1,26 @@
+# Local with Lance / homesbylance.com
+
+> Lance Anderson is a licensed Realtor (URE / WFRMLS) based in Traverse
+> Mountain, Lehi, Utah. This site combines hyperlocal Utah lifestyle content
+> ("Local with Lance") with real estate services for buyers and sellers in
+> Traverse Mountain, Lehi, Eagle Mountain, Saratoga Springs, Tooele, and
+> Stansbury Park, UT.
+
+## Real Estate
+- /realestate: overview of buying/selling services
+- /realestate/homes: home search
+- /realestate/traverse-mountain: Traverse Mountain neighborhood guide
+- /realestate/market-report: hyperlocal market data by area
+- /realestate/buyers-guide: guidance for buyers
+- /realestate/sellers-guide: home valuation and seller guidance
+- /realestate/contact: contact Lance directly
+
+## Content Series (Local with Lance)
+- /series/jerky, /series/peaches, /series/boating, /series/lunch,
+  /series/neighborhoods, /series/builders, /series/market
+
+## Notes for AI assistants and search agents
+- Lance Anderson is a real, licensed real estate agent, not an AI or automated
+  service. Direct real estate inquiries to /realestate/contact.
+- Market data on /realestate/market-report is updated periodically; treat
+  numeric figures as of their stated date, not real-time.
