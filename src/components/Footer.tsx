@@ -27,10 +27,11 @@ export default function Footer() {
           <p className="uppercase tracking-wide text-camel mb-3 text-xs font-semibold">Connect</p>
           <ul className="space-y-2 text-cream/80">
             <li><a href="tel:+18018605225" className="hover:text-terracotta">(801) 860-5225</a></li>
-            <li><a href="mailto:landerson@jasonmitchellgroup.com" className="hover:text-terracotta">landerson@jasonmitchellgroup.com</a></li>
-            <li><a href="#" className="hover:text-terracotta">YouTube</a></li>
-            <li><a href="#" className="hover:text-terracotta">Instagram</a></li>
-            <li><a href="#" className="hover:text-terracotta">Facebook</a></li>
+            <li><a href="mailto:lancea141@gmail.com" className="hover:text-terracotta">lancea141@gmail.com</a></li>
+            <li><a href="https://www.youtube.com/@lance141" target="_blank" rel="noopener noreferrer" className="hover:text-terracotta">YouTube</a></li>
+            <li><a href="https://www.instagram.com/lancea141" target="_blank" rel="noopener noreferrer" className="hover:text-terracotta">Instagram</a></li>
+            <li><a href="https://www.facebook.com/lance141" target="_blank" rel="noopener noreferrer" className="hover:text-terracotta">Facebook</a></li>
+            <li><a href="https://www.tiktok.com/@lancea141" target="_blank" rel="noopener noreferrer" className="hover:text-terracotta">TikTok</a></li>
           </ul>
         </div>
       </div>
