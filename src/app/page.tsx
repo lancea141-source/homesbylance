@@ -14,15 +14,18 @@ export default function Home() {
       <section className="grain relative overflow-hidden">
         <div className="max-w-6xl mx-auto px-5 sm:px-8 pt-16 pb-20 sm:pt-24 sm:pb-28">
           <p className="uppercase tracking-[0.2em] text-xs font-semibold text-olive mb-5">
-            Traverse Mountain &middot; Lehi, Utah
+            Utah Real Estate
           </p>
           <h1 className="font-display text-[13vw] sm:text-6xl md:text-7xl leading-[0.95] text-navy">
             Local <span className="italic text-terracotta">with Lance</span>
           </h1>
-          <p className="mt-6 max-w-xl text-lg text-navy/80 leading-relaxed">
+          <p className="mt-6 max-w-xl text-lg font-semibold text-navy leading-relaxed">
+            Turning Real Estate Information into Better Decisions.
+          </p>
+          <p className="mt-3 max-w-xl text-base text-navy/70 leading-relaxed">
             The neighborhoods. The market. The lake. The jerky. The peaches.
             <br />
-            <span className="font-semibold">The guy who knows Utah.</span>
+            The guy who knows Utah.
           </p>
           <div className="mt-9 flex flex-wrap gap-4">
             <a
