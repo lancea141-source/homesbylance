@@ -3,6 +3,7 @@ import Image from "next/image";
 import { series, categoryLabels } from "@/lib/series";
 import { testimonials } from "@/lib/testimonials";
 import TestimonialCard from "@/components/TestimonialCard";
+import IntentRouter from "@/components/IntentRouter";
 
 const headshot = "/images/lance-headshot.jpg";
 
@@ -24,7 +25,7 @@ export default function Home() {
             <span className="font-semibold">The guy who knows Utah.</span>
           </p>
           <div className="mt-9 flex flex-wrap gap-4">
-            <a
+            
               href="#series"
               className="rounded-full bg-navy text-cream px-6 py-3 text-sm font-semibold hover:bg-terracotta transition-colors"
             >
@@ -40,6 +41,8 @@ export default function Home() {
         </div>
         <div className="contour-rule" />
       </section>
+
+      <IntentRouter />
 
       {/* Series grid, grouped by category */}
       <section id="series" className="max-w-6xl mx-auto px-5 sm:px-8 py-20">
@@ -104,7 +107,7 @@ export default function Home() {
             <span className="rounded-full border border-camel/50 px-4 py-1.5">Utah County</span>
           </div>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
-            <a
+            
               href="mailto:lancea141@gmail.com"
               className="rounded-full bg-terracotta px-6 py-3 text-sm font-semibold hover:bg-camel hover:text-navy transition-colors"
             >
@@ -180,7 +183,7 @@ export default function Home() {
             channel, and a real community of Traverse Mountain &amp; Lehi neighbors. Free to join,
             just good people and good local stuff.
           </p>
-          <a
+          
             href="https://www.facebook.com/groups/817743620755776"
             target="_blank"
             rel="noopener noreferrer"
