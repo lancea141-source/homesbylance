@@ -3,49 +3,14 @@ import Image from "next/image";
 import { series, categoryLabels } from "@/lib/series";
 import { testimonials } from "@/lib/testimonials";
 import TestimonialCard from "@/components/TestimonialCard";
-import IntentRouter from "@/components/IntentRouter";
+import HomeHero from "@/components/HomeHero";
 
 const headshot = "/images/lance-headshot.jpg";
 
 export default function Home() {
   return (
     <>
-      {/* Hero */}
-      <section className="grain relative overflow-hidden">
-        <div className="max-w-6xl mx-auto px-5 sm:px-8 pt-16 pb-20 sm:pt-24 sm:pb-28">
-          <p className="uppercase tracking-[0.2em] text-xs font-semibold text-olive mb-5">
-            Utah Real Estate
-          </p>
-          <h1 className="font-display text-[13vw] sm:text-6xl md:text-7xl leading-[0.95] text-navy">
-            Local <span className="italic text-terracotta">with Lance</span>
-          </h1>
-          <p className="mt-6 max-w-xl text-lg font-semibold text-navy leading-relaxed">
-            Turning Real Estate Information into Better Decisions.
-          </p>
-          <p className="mt-3 max-w-xl text-base text-navy/70 leading-relaxed">
-            The neighborhoods. The market. The lake. The jerky. The peaches.
-            <br />
-            The guy who knows Utah.
-          </p>
-          <div className="mt-9 flex flex-wrap gap-4">
-            <a
-              href="#series"
-              className="rounded-full bg-navy text-cream px-6 py-3 text-sm font-semibold hover:bg-terracotta transition-colors"
-            >
-              Explore the Series
-            </a>
-            <Link
-              href="/realestate"
-              className="rounded-full border border-navy/25 text-navy px-6 py-3 text-sm font-semibold hover:border-terracotta hover:text-terracotta transition-colors"
-            >
-              Buy or Sell
-            </Link>
-          </div>
-        </div>
-        <div className="contour-rule" />
-      </section>
-
-      <IntentRouter />
+      <HomeHero />
 
       {/* Series grid, grouped by category */}
       <section id="series" className="max-w-6xl mx-auto px-5 sm:px-8 py-20">
