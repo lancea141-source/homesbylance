@@ -60,10 +60,10 @@ export default function IntentRouter() {
     <section className="w-full bg-[#F4EDE4] py-14 px-4 sm:py-20">
       <div className="mx-auto max-w-5xl">
         <h2 className="font-display text-3xl sm:text-4xl font-extrabold tracking-tight text-[#2F3E46] text-center">
-          What are you trying to figure out?
+          Where do you want to start?
         </h2>
         <p className="mt-3 text-center text-[#2F3E46]/70 text-base sm:text-lg max-w-xl mx-auto">
-          Pick one. I&apos;ll show you the real numbers, not a canned estimate.
+          Explore your options. Understand the market. Make a better decision.
         </p>
 
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
