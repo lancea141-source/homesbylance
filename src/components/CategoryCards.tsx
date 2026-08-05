@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 type Category = {
   key: string;
@@ -30,7 +31,7 @@ export const CATEGORIES: Category[] = [
     description: "Find the right home.",
     href: "/realestate/homes",
     accent: "#C0652A",
-    image: "https://drive.google.com/uc?id=12SzevDW8EpwXRjm8Y5CntuCbWkV27cBU",
+    image: "/images/category/buy.png",
     icon: (
       <svg {...ICON}>
         <path d="M3 11.5 12 4l9 7.5" />
@@ -44,7 +45,7 @@ export const CATEGORIES: Category[] = [
     description: "Sell with a strategy.",
     href: "/realestate/sellers-guide",
     accent: "#2F3E46",
-    image: "https://drive.google.com/uc?id=19PFW3qUhn06GPL0YtKKjKMz03emj1TLD",
+    image: "/images/category/sell.png",
     icon: (
       <svg {...ICON}>
         <path d="M4 21V9l7-5 7 5v12" />
@@ -59,7 +60,7 @@ export const CATEGORIES: Category[] = [
     description: "Make the numbers work.",
     href: "/series/cap-rate",
     accent: "#6B7A3A",
-    image: "https://drive.google.com/uc?id=1shUY1EuHtZh73yq0dNFTr9vvnzVUGRMQ",
+    image: "/images/category/invest.png",
     icon: (
       <svg {...ICON}>
         <path d="M4 20V10" />
@@ -75,7 +76,7 @@ export const CATEGORIES: Category[] = [
     description: "Know what's happening.",
     href: "/realestate/market-report",
     accent: "#4F7C82",
-    image: "https://drive.google.com/uc?id=1k0ms1hcc_xJDhaH060WhMcACFc_ttJOw",
+    image: "/images/category/market.png",
     icon: (
       <svg {...ICON}>
         <circle cx="12" cy="12" r="9" />
@@ -89,7 +90,7 @@ export const CATEGORIES: Category[] = [
     description: "Know where you live.",
     href: "/realestate/traverse-mountain",
     accent: "#A44A2F",
-    image: "https://drive.google.com/uc?id=16BLRiidnplZ-skCghlCwIXMe1_PAfUN1",
+    image: "/images/category/local.png",
     icon: (
       <svg {...ICON}>
         <path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 12 2.5a7 7 0 0 1 7 7C19 14.8 12 21 12 21Z" />
@@ -122,10 +123,12 @@ export default function CategoryCards() {
               className="group flex flex-col rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-200"
             >
               <div className="relative h-48 sm:h-56 overflow-hidden">
-                <img
+                <Image
                   src={cat.image}
                   alt={cat.label}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                  fill
+                  sizes="(min-width: 1024px) 20vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
+                  className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
                 />
               </div>
 
