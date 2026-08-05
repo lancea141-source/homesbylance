@@ -18,10 +18,10 @@ export default function TraverseMountain() {
       </p>
       <div className="flex flex-wrap gap-4">
         <Link
-          href="/realestate/market-report/traverse-mountain"
+          href="/market-updates/traverse-mountain"
           className="rounded-full bg-navy text-cream px-6 py-3 text-sm font-semibold hover:bg-terracotta transition-colors"
         >
-          View Market Report
+          View Live Market Update
         </Link>
         <Link
           href="/series/neighborhoods"
