@@ -4,6 +4,7 @@ import { series, categoryLabels } from "@/lib/series";
 import { testimonials } from "@/lib/testimonials";
 import TestimonialCard from "@/components/TestimonialCard";
 import HomeHero from "@/components/HomeHero";
+import CategoryCards from "@/components/CategoryCards";
 
 const headshot = "/images/lance-headshot.jpg";
 
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <>
       <HomeHero />
+      <CategoryCards />
 
       {/* Series grid, grouped by category */}
       <section id="series" className="max-w-6xl mx-auto px-5 sm:px-8 py-20">
