@@ -20,7 +20,7 @@ export default function Home() {
             Local <span className="italic text-terracotta">with Lance</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-navy/80 leading-relaxed">
-            The jerky. The peaches. The lake. The neighborhoods. The market.
+            The neighborhoods. The market. The lake. The jerky. The peaches.
             <br />
             <span className="font-semibold">The guy who knows Utah.</span>
           </p>
