@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fraunces, Public_Sans, Archivo } from "next/font/google";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import BuildBanner from "@/components/BuildBanner";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -68,6 +69,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col bg-cream text-navy">
+        <BuildBanner />
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />
