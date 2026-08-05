@@ -94,7 +94,7 @@ export default function Home() {
             className="rounded-full mx-auto mb-8 border-2 border-camel object-cover h-28 w-28"
           />
           <h2 className="font-display text-3xl sm:text-4xl italic mb-6">
-            I Know Utah. Better Than Anyone.
+            I Know Utah!
           </h2>
           <p className="text-cream/80 leading-relaxed max-w-2xl mx-auto">
             The jerky spots, the orchard seasons, the boat ramps, the best lunch stops &mdash;
