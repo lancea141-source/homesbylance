@@ -3,6 +3,12 @@ export type MarketArea = {
   name: string;
   region: string;
   blurb: string;
+  /** URL of a live report published by the Google Sheets pipeline (GitHub Pages, etc). Omit until one exists. */
+  reportUrl?: string;
+  /** URL of the report's past-months archive, if it publishes one. */
+  historyUrl?: string;
+  /** URL of the report's CMA adjustment rates page, if it publishes one. */
+  cmaRatesUrl?: string;
 };
 
 export const marketAreas: MarketArea[] = [
@@ -11,12 +17,16 @@ export const marketAreas: MarketArea[] = [
     name: "Traverse Mountain",
     region: "Lehi, UT",
     blurb: "Lance's home turf \u2014 the tightest, most detailed data on the mountain.",
+    reportUrl: "https://lancea141-source.github.io/tm-market-update/",
+    historyUrl: "https://lancea141-source.github.io/tm-market-update/history/",
+    cmaRatesUrl: "https://lancea141-source.github.io/tm-market-update/cma-rates/",
   },
   {
     slug: "lehi",
     name: "Lehi",
     region: "Utah County, UT",
     blurb: "Silicon Slopes growth, new construction, and established neighborhoods.",
+    reportUrl: "https://lancea141-source.github.io/tm-market-update/lehi/",
   },
   {
     slug: "eagle-mountain",

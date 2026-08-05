@@ -16,7 +16,7 @@ export async function generateMetadata({
   const item = marketAreas.find((a) => a.slug === area);
   if (!item) return {};
   return {
-    title: `${item.name} Market Report`,
+    title: item.reportUrl ? `${item.name} Market Update | Lance the Realtor` : `${item.name} Market Report`,
     description: `Hyperlocal real estate pricing data for ${item.name}, ${item.region}.`,
   };
 }
@@ -38,6 +38,61 @@ export default async function MarketAreaReport({
   const { area } = await params;
   const item = marketAreas.find((a) => a.slug === area);
   if (!item) notFound();
+
+  if (item.reportUrl) {
+    return (
+      <>
+        <section className="max-w-4xl mx-auto px-5 sm:px-8 pt-16 pb-8">
+          <Link href="/realestate/market-report" className="text-sm text-terracotta font-semibold">
+            &larr; All Areas
+          </Link>
+          <p className="uppercase tracking-[0.2em] text-xs font-semibold text-olive mt-6 mb-2">
+            {item.region}
+          </p>
+          <h1 className="font-display text-4xl sm:text-5xl text-navy mb-4">{item.name} Market Update</h1>
+          <p className="text-lg text-navy/75 leading-relaxed mb-6 max-w-2xl">{item.blurb}</p>
+          <div className="flex flex-wrap gap-x-6 gap-y-2">
+            <a
+              href={item.reportUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-sm font-semibold text-terracotta hover:text-navy transition-colors"
+            >
+              View the full report &rarr;
+            </a>
+            {item.historyUrl && (
+              <a
+                href={item.historyUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-sm font-semibold text-navy/70 hover:text-terracotta transition-colors"
+              >
+                View Past Reports &rarr;
+              </a>
+            )}
+            {item.cmaRatesUrl && (
+              <a
+                href={item.cmaRatesUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-sm font-semibold text-navy/70 hover:text-terracotta transition-colors"
+              >
+                View CMA Adjustment Rates &rarr;
+              </a>
+            )}
+          </div>
+        </section>
+        <div className="w-full border-y border-navy/10 bg-white/40">
+          <iframe
+            src={item.reportUrl}
+            title={`${item.name} Market Update`}
+            className="block w-full h-[2400px] border-0"
+            loading="lazy"
+          />
+        </div>
+      </>
+    );
+  }
 
   return (
     <section className="max-w-4xl mx-auto px-5 sm:px-8 py-16">

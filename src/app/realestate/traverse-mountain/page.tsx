@@ -18,7 +18,7 @@ export default function TraverseMountain() {
       </p>
       <div className="flex flex-wrap gap-4">
         <Link
-          href="/market-updates/traverse-mountain"
+          href="/realestate/market-report/traverse-mountain"
           className="rounded-full bg-navy text-cream px-6 py-3 text-sm font-semibold hover:bg-terracotta transition-colors"
         >
           View Live Market Update

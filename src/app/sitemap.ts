@@ -11,7 +11,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/realestate/homes",
     "/realestate/traverse-mountain",
     "/realestate/market-report",
-    "/market-updates/traverse-mountain",
     "/realestate/buyers-guide",
     "/realestate/sellers-guide",
     "/realestate/contact",

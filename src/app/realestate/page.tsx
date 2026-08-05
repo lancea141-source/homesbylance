@@ -10,7 +10,7 @@ const links = [
   { href: "/realestate/homes", title: "Search Homes", blurb: "Browse active listings across Traverse Mountain and Lehi." },
   { href: "/realestate/traverse-mountain", title: "Traverse Mountain", blurb: "Street-by-street neighborhood guide." },
   { href: "/realestate/market-report", title: "Market Report", blurb: "Hyperlocal pricing trends, updated regularly." },
-  { href: "/market-updates/traverse-mountain", title: "Traverse Mountain Market Update", blurb: "Lance's live market report, embedded right here." },
+  { href: "/realestate/market-report/traverse-mountain", title: "Traverse Mountain Market Update", blurb: "Lance's live market report, embedded right here." },
   { href: "/realestate/buyers-guide", title: "Buyer's Guide", blurb: "Why work with a buyer's agent in this market." },
   { href: "/realestate/sellers-guide", title: "What's My Home Worth", blurb: "A real, data-driven valuation \u2014 not a canned estimate." },
   { href: "/series/academy", title: "Buyer's & Seller's Academy", blurb: "Video lessons on buying and selling in Utah." },
