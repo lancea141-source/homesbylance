@@ -5,6 +5,7 @@ import TestimonialCard from "@/components/TestimonialCard";
 import HomeHero from "@/components/HomeHero";
 import CategoryCards from "@/components/CategoryCards";
 import WhoIsLance from "@/components/WhoIsLance";
+import BottomLinks from "@/components/BottomLinks";
 
 const headshot = "/images/lance-headshot.jpg";
 
@@ -24,7 +25,7 @@ export default function Home() {
             alt="Lance Anderson"
             width={112}
             height={112}
-            className="rounded-full mx-auto mb-8 border-2 border-camel object-cover h-28 w-28"
+            className="rounded-full mx-auto mb-8 border-2 border-camel object-cover object-top h-28 w-28"
           />
           <h2 className="font-display text-3xl sm:text-4xl italic mb-6">
             I Know Utah!
@@ -126,6 +127,8 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+      <BottomLinks />
     </>
   );
 }

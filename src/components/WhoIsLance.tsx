@@ -1,8 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
 
-const familyPhoto = "/images/lance-family.jpg";
-const top500Badge = "/images/top500-badge.jpg";
+const familyPhoto =
+  "https://drive.google.com/uc?id=1NI03AGInIIvQNt5-d-upTrmppxi8-0yu";
+const top500Badge =
+  "https://drive.google.com/uc?id=19ON9IUmPcXyk_PJv9PIYYhg44QFHia4v";
 
 const CREDS = [
   {
@@ -24,7 +25,7 @@ const CREDS = [
 
 export default function WhoIsLance() {
   return (
-    <section className="max-w-6xl mx-auto px-5 sm:px-8 py-20">
+    <section id="who-is-lance" className="max-w-6xl mx-auto px-5 sm:px-8 py-20">
       <p className="uppercase tracking-[0.2em] text-xs font-semibold text-olive mb-2">
         The Person Behind The Data
       </p>
@@ -78,13 +79,14 @@ export default function WhoIsLance() {
           </p>
         </div>
 
-        <div className="relative rounded-3xl overflow-hidden border border-navy/10 shadow-sm aspect-[4/5] lg:aspect-[3/4]">
+        <div className="relative rounded-3xl overflow-hidden border border-navy/10 shadow-sm bg-cream min-h-[320px] sm:min-h-[420px] lg:min-h-[520px]">
           <Image
             src={familyPhoto}
             alt="Lance Anderson with his family"
             fill
             sizes="(min-width: 1024px) 33vw, 90vw"
-            className="object-cover"
+            className="object-contain"
+            unoptimized
           />
         </div>
       </div>
@@ -97,13 +99,14 @@ export default function WhoIsLance() {
             className="rounded-2xl border border-navy/10 bg-white/60 p-6 text-center flex flex-col items-center"
           >
             {c.badge && (
-              <div className="relative h-14 w-14 mb-3">
+              <div className="relative h-24 w-24 sm:h-28 sm:w-28 mb-3">
                 <Image
                   src={c.badge}
                   alt="Utah Top 500 Realtor badge"
                   fill
-                  sizes="56px"
+                  sizes="112px"
                   className="object-contain"
+                  unoptimized
                 />
               </div>
             )}
@@ -113,15 +116,6 @@ export default function WhoIsLance() {
             <p className="mt-1 text-sm text-navy/65">{c.label}</p>
           </div>
         ))}
-      </div>
-
-      <div className="mt-10 text-center">
-        <Link
-          href="/realestate/contact"
-          className="inline-block text-sm font-semibold text-terracotta hover:text-navy transition-colors"
-        >
-          More About Lance &rarr;
-        </Link>
       </div>
     </section>
   );
