@@ -1,9 +1,7 @@
 import Image from "next/image";
 
-const familyPhoto =
-  "https://drive.google.com/uc?id=1NI03AGInIIvQNt5-d-upTrmppxi8-0yu";
-const top500Badge =
-  "https://drive.google.com/uc?id=19ON9IUmPcXyk_PJv9PIYYhg44QFHia4v";
+const familyPhoto = "/images/lance-family.jpg";
+const top500Badge = "/images/top500-badge.jpg";
 
 const CREDS = [
   {
@@ -86,7 +84,6 @@ export default function WhoIsLance() {
             fill
             sizes="(min-width: 1024px) 33vw, 90vw"
             className="object-contain"
-            unoptimized
           />
         </div>
       </div>
@@ -106,7 +103,6 @@ export default function WhoIsLance() {
                   fill
                   sizes="112px"
                   className="object-contain"
-                  unoptimized
                 />
               </div>
             )}
