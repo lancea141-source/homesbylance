@@ -7,6 +7,7 @@ const base = "https://homesbylance.com";
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
     "",
+    "/series",
     "/realestate",
     "/realestate/homes",
     "/realestate/traverse-mountain",
