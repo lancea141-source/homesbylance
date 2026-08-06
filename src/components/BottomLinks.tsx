@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CATEGORIES } from "@/components/CategoryCards";
+import { CATEGORIES } from "@/lib/categories";
 
 export default function BottomLinks() {
   return (
