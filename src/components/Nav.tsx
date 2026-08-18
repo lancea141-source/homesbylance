@@ -66,7 +66,6 @@ const PILLARS: Pillar[] = [
       { label: "Who Is Lance", href: "/#who-is-lance" },
       { label: "Testimonials", href: "/testimonials" },
       { label: "Journal", href: "/blog" },
-      { label: "Contact", href: "/realestate/contact" },
     ],
   },
 ];
