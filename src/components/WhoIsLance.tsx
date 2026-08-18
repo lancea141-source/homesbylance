@@ -1,25 +1,6 @@
 import Image from "next/image";
 
 const familyPhoto = "/images/lance-family.jpg";
-const top500Badge = "/images/top500-badge.jpg";
-
-const CREDS = [
-  {
-    stat: "3× TOP 500 REALTOR IN UTAH",
-    label: "Proven experience and results",
-    badge: top500Badge,
-  },
-  {
-    stat: "ENGINEER + NUMBERS GUY",
-    label: "Data, analysis & real-world problem solving",
-    badge: null,
-  },
-  {
-    stat: "UTAH LOCAL",
-    label: "Real estate, neighborhoods & local living",
-    badge: null,
-  },
-];
 
 export default function WhoIsLance() {
   return (
@@ -77,32 +58,6 @@ export default function WhoIsLance() {
             className="object-contain"
           />
         </div>
-      </div>
-
-      {/* Credibility strip */}
-      <div className="mt-16 grid sm:grid-cols-3 gap-6">
-        {CREDS.map((c) => (
-          <div
-            key={c.stat}
-            className="rounded-2xl border border-navy/10 bg-white/60 p-6 text-center flex flex-col items-center"
-          >
-            {c.badge && (
-              <div className="relative h-24 w-24 sm:h-28 sm:w-28 mb-3">
-                <Image
-                  src={c.badge}
-                  alt="Utah Top 500 Realtor badge"
-                  fill
-                  sizes="112px"
-                  className="object-contain"
-                />
-              </div>
-            )}
-            <p className="font-display font-bold text-navy tracking-wide text-sm sm:text-base">
-              {c.stat}
-            </p>
-            <p className="mt-1 text-sm text-navy/65">{c.label}</p>
-          </div>
-        ))}
       </div>
     </section>
   );

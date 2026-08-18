@@ -29,9 +29,13 @@ export default function WelcomeHero() {
 
         <div className="order-2 md:order-1 text-center md:text-left">
           <h2 className="font-display text-3xl sm:text-4xl text-navy mb-4">
-            Welcome, I&apos;m Lance Anderson &mdash; here to help you with all
-            of your real estate needs!
+            I&apos;m Lance Anderson.
           </h2>
+          <p className="text-navy/75 leading-relaxed max-w-md mx-auto md:mx-0 mb-6">
+            Whatever your real estate goals, I&apos;m here to help you
+            understand your options, navigate the complexities, and
+            confidently make your next move.
+          </p>
 
           <a
             href="tel:+18018605225"
