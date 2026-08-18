@@ -65,7 +65,7 @@ export default function WelcomeHero() {
             <span aria-hidden="true" className="text-camel">
               &#9733;&#9733;&#9733;&#9733;&#9733;
             </span>
-            4.9 &middot; 42 Google Reviews
+            5.0 &middot; 42 Google Reviews
           </a>
 
           <SocialIcons className="justify-center md:justify-start" />
