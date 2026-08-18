@@ -8,6 +8,13 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-5 sm:px-8 py-14 grid gap-10 sm:grid-cols-3">
         <div>
           <Image
+            src="/images/lance-headshot.jpg"
+            alt="Lance Anderson"
+            width={64}
+            height={64}
+            className="rounded-full border border-cream/20 object-cover object-top h-16 w-16 mb-4"
+          />
+          <Image
             src="/images/lance-the-realtor-logo.png"
             alt="Lance the Realtor"
             width={120}
@@ -38,6 +45,7 @@ export default function Footer() {
             <li><Link href="/realestate/market-report" className="hover:text-terracotta">Market Report</Link></li>
             <li><Link href="/realestate/sellers-guide" className="hover:text-terracotta">What&apos;s My Home Worth</Link></li>
             <li><Link href="/testimonials" className="hover:text-terracotta">Testimonials</Link></li>
+            <li><Link href="/methodology" className="hover:text-terracotta">Data &amp; Methodology</Link></li>
           </ul>
         </div>
         <div className="text-sm">

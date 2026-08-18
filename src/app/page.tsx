@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-import { series, categoryLabels } from "@/lib/series";
 import { testimonials } from "@/lib/testimonials";
 import TestimonialCard from "@/components/TestimonialCard";
 import HomeHero from "@/components/HomeHero";
 import CategoryCards from "@/components/CategoryCards";
+import WhoIsLance from "@/components/WhoIsLance";
+import BottomLinks from "@/components/BottomLinks";
 
 const headshot = "/images/lance-headshot.jpg";
 
@@ -14,44 +15,7 @@ export default function Home() {
       <HomeHero />
       <CategoryCards />
 
-      {/* Series grid, grouped by category */}
-      <section id="series" className="max-w-6xl mx-auto px-5 sm:px-8 py-20">
-        <p className="uppercase tracking-[0.2em] text-xs font-semibold text-olive mb-2">The Series</p>
-        <h2 className="font-display text-3xl sm:text-4xl mb-12 text-navy">
-          Utah, from every angle Lance actually lives.
-        </h2>
-
-        {(["lifestyle", "real-estate", "investing"] as const).map((cat) => (
-          <div key={cat} className="mb-16 last:mb-0">
-            <h3 className="font-display text-xl italic text-terracotta mb-6">
-              {categoryLabels[cat]}
-            </h3>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {series
-                .filter((s) => s.category === cat)
-                .map((s) => (
-                  <Link
-                    key={s.slug}
-                    href={`/series/${s.slug}`}
-                    className="group rounded-2xl border border-navy/10 bg-white/60 p-6 hover:border-terracotta hover:shadow-lg transition-all"
-                  >
-                    <span className="text-3xl">{s.emoji}</span>
-                    <h4 className="font-display text-xl mt-4 text-navy group-hover:text-terracotta transition-colors">
-                      {s.title}
-                    </h4>
-                    <p className="mt-2 text-sm text-navy/70 leading-relaxed">{s.blurb}</p>
-                    <p className="mt-4 text-xs uppercase tracking-wide text-camel font-semibold">
-                      {s.channels.join(" \u00B7 ")}
-                    </p>
-                    <span className="mt-4 inline-block text-sm font-semibold text-terracotta">
-                      View &rarr;
-                    </span>
-                  </Link>
-                ))}
-            </div>
-          </div>
-        ))}
-      </section>
+      <WhoIsLance />
 
       {/* Authority statement */}
       <section className="bg-navy text-cream">
@@ -61,7 +25,7 @@ export default function Home() {
             alt="Lance Anderson"
             width={112}
             height={112}
-            className="rounded-full mx-auto mb-8 border-2 border-camel object-cover h-28 w-28"
+            className="rounded-full mx-auto mb-8 border-2 border-camel object-cover object-top h-28 w-28"
           />
           <h2 className="font-display text-3xl sm:text-4xl italic mb-6">
             I Know Utah!
@@ -72,23 +36,10 @@ export default function Home() {
             pitch. That&apos;s just what happens when you live it every day.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3 text-xs font-semibold uppercase tracking-wide">
-            <span className="rounded-full border border-camel/50 px-4 py-1.5">Lehi Primary Market</span>
+            <span className="rounded-full border border-camel/50 px-4 py-1.5">Lehi Market</span>
             <span className="rounded-full border border-camel/50 px-4 py-1.5">TM Traverse Mountain</span>
             <span className="rounded-full border border-camel/50 px-4 py-1.5">Utah County</span>
-          </div>
-          <div className="mt-10 flex flex-wrap justify-center gap-4">
-            <a
-              href="mailto:lancea141@gmail.com"
-              className="rounded-full bg-terracotta px-6 py-3 text-sm font-semibold hover:bg-camel hover:text-navy transition-colors"
-            >
-              Talk to Lance
-            </a>
-            <Link
-              href="/realestate"
-              className="rounded-full border border-cream/40 px-6 py-3 text-sm font-semibold hover:border-camel transition-colors"
-            >
-              See Real Estate
-            </Link>
+            <span className="rounded-full border border-camel/50 px-4 py-1.5">SL County</span>
           </div>
         </div>
       </section>
@@ -163,6 +114,8 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+      <BottomLinks />
     </>
   );
 }

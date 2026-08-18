@@ -103,16 +103,7 @@ export const CATEGORIES: Category[] = [
 export default function CategoryCards() {
   return (
     <section className="w-full bg-[#F4EDE4]">
-      <div className="max-w-6xl mx-auto px-5 sm:px-8 pt-4 pb-10 sm:pb-14 text-center">
-        <h2 className="font-display font-extrabold tracking-tight text-[#2F3E46] text-3xl sm:text-4xl">
-          Where do you want to start?
-        </h2>
-        <p className="mt-3 text-base sm:text-lg text-[#2F3E46]/70">
-          Know more. Decide better.
-        </p>
-      </div>
-
-      <div className="max-w-6xl mx-auto px-5 sm:px-8 pb-16 sm:pb-20">
+      <div className="max-w-6xl mx-auto px-5 sm:px-8 pt-10 pb-16 sm:pb-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
           {CATEGORIES.map((cat) => (
             <Link

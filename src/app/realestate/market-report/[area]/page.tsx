@@ -80,6 +80,12 @@ export default async function MarketAreaReport({
                 View CMA Adjustment Rates &rarr;
               </a>
             )}
+            <Link
+              href="/methodology"
+              className="inline-block text-sm font-semibold text-navy/70 hover:text-terracotta transition-colors"
+            >
+              How This Report Is Built &rarr;
+            </Link>
           </div>
         </section>
         <div className="w-full border-y border-navy/10 bg-white/40">
