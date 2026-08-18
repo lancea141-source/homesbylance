@@ -45,6 +45,7 @@ export default function Footer() {
             <li><Link href="/realestate/market-report" className="hover:text-terracotta">Market Report</Link></li>
             <li><Link href="/realestate/sellers-guide" className="hover:text-terracotta">What&apos;s My Home Worth</Link></li>
             <li><Link href="/testimonials" className="hover:text-terracotta">Testimonials</Link></li>
+            <li><Link href="/methodology" className="hover:text-terracotta">Data &amp; Methodology</Link></li>
           </ul>
         </div>
         <div className="text-sm">

@@ -36,23 +36,10 @@ export default function Home() {
             pitch. That&apos;s just what happens when you live it every day.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3 text-xs font-semibold uppercase tracking-wide">
-            <span className="rounded-full border border-camel/50 px-4 py-1.5">Lehi Primary Market</span>
+            <span className="rounded-full border border-camel/50 px-4 py-1.5">Lehi Market</span>
             <span className="rounded-full border border-camel/50 px-4 py-1.5">TM Traverse Mountain</span>
             <span className="rounded-full border border-camel/50 px-4 py-1.5">Utah County</span>
-          </div>
-          <div className="mt-10 flex flex-wrap justify-center gap-4">
-            <a
-              href="mailto:lancea141@gmail.com"
-              className="rounded-full bg-terracotta px-6 py-3 text-sm font-semibold hover:bg-camel hover:text-navy transition-colors"
-            >
-              Talk to Lance
-            </a>
-            <Link
-              href="/realestate"
-              className="rounded-full border border-cream/40 px-6 py-3 text-sm font-semibold hover:border-camel transition-colors"
-            >
-              See Real Estate
-            </Link>
+            <span className="rounded-full border border-camel/50 px-4 py-1.5">SL County</span>
           </div>
         </div>
       </section>

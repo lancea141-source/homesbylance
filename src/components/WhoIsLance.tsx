@@ -34,46 +34,37 @@ export default function WhoIsLance() {
       <div className="grid lg:grid-cols-[1.4fr_1fr] gap-10 lg:gap-14 items-start">
         <div className="space-y-5 text-navy/80 leading-relaxed">
           <p className="text-lg text-navy font-medium">
-            A Realtor, an engineer, a numbers guy, a local&mdash;and someone who
-            believes better information leads to better decisions.
+            A Realtor, an engineer, a numbers guy, and a Utah local. I believe
+            better information leads to better decisions&mdash;but real estate
+            has always been about more than numbers to me. It&apos;s about
+            people, relationships, and taking care of my clients like I do my
+            own family.
           </p>
           <p>
-            I&apos;m Lance Anderson. I&apos;ve spent my career solving problems,
-            building businesses, connecting people, and helping clients make big
-            decisions with confidence.
-          </p>
-          <p>Today, that means real estate.</p>
-          <p>
-            For the past three years, I&apos;ve been recognized among Utah&apos;s
-            Top 500 Realtors, but what matters more to me is how I got there: by
-            listening, digging into the numbers, explaining the options, and
-            helping clients figure out what actually makes sense for them.
+            I&apos;ve spent my career solving problems, building businesses,
+            connecting people, and helping others make big decisions with
+            confidence. This background shapes how I approach real estate
+            today: understand the numbers, ask the right questions, explain
+            the options, and find the solution that makes the most sense for
+            you.
           </p>
           <p>
-            My background is a little different from most Realtors. I&apos;m an
-            engineer, an entrepreneur, and a numbers guy. I&apos;ve built and
-            operated businesses, developed products, and spent years in sales and
-            entrepreneurship. I naturally want to understand why something
-            works&mdash;not just repeat what everyone else is doing.
+            For the past three years, I&apos;ve been recognized among
+            Utah&apos;s Top 500 Realtors, but what I value most are the
+            relationships that come from serving others. My clients start as
+            people I&apos;m helping buy or sell a home and end up becoming
+            friends. That&apos;s one of my favorite parts of this business.
           </p>
-          <p>That mindset is behind Local with Lance.</p>
           <p>
-            I&apos;m building better market reports, pricing tools, investment
-            analysis, and local resources because I believe real estate should be
-            easier to understand. And because real estate is local, I also want to
-            share the places and experiences that make Utah home&mdash;from
-            neighborhoods and new construction to local lunches, peaches, jerky,
-            and days on the lake.
-          </p>
-          <p>But real estate is only part of my life.</p>
-          <p>
-            I&apos;m a husband, a dad, and a Utah local who loves spending time
-            with my family, getting out on the water, and discovering the people
-            and places around us.
+            Local with Lance brings those two sides of me together&mdash;the
+            engineer and numbers guy who loves digging into the market, and
+            the Realtor who genuinely cares about the people behind every
+            decision.
           </p>
           <p className="text-navy font-medium">
-            The goal is simple: know more, understand your options, and make a
-            better decision.
+            Because buying or selling a home is a big deal. I take the trust
+            you place in me personally&mdash;and I&apos;m here long after the
+            transaction is over.
           </p>
         </div>
 
