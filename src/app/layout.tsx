@@ -3,6 +3,7 @@ import { Fraunces, Public_Sans, Archivo } from "next/font/google";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import BuildBanner from "@/components/BuildBanner";
+import MobileCallBar from "@/components/MobileCallBar";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -71,8 +72,9 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-cream text-navy">
         <BuildBanner />
         <Nav />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 pb-16 sm:pb-0">{children}</main>
         <Footer />
+        <MobileCallBar />
       </body>
     </html>
   );
