@@ -7,12 +7,8 @@ export default function HomeHero() {
         </h1>
         <div className="mx-auto mt-4 mb-3 h-[2px] w-10 bg-[#C0652A]" />
 
-        <p className="uppercase tracking-[0.25em] text-xs sm:text-sm font-bold text-[#2F3E46]">
-          Know More. <span className="text-[#C0652A]">Decide</span> Better.
-        </p>
-
         <p className="mt-5 text-base sm:text-lg text-[#2F3E46]/70 max-w-xl mx-auto">
-          Local knowledge. Real numbers. Better decisions.
+          Turning Real Estate Information into Better Decisions.
         </p>
       </div>
     </section>

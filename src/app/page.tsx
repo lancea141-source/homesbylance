@@ -3,8 +3,10 @@ import Image from "next/image";
 import { testimonials } from "@/lib/testimonials";
 import TestimonialCard from "@/components/TestimonialCard";
 import HomeHero from "@/components/HomeHero";
+import WelcomeHero from "@/components/WelcomeHero";
 import CategoryCards from "@/components/CategoryCards";
 import WhoIsLance from "@/components/WhoIsLance";
+import ThumbnailLinks from "@/components/ThumbnailLinks";
 import BottomLinks from "@/components/BottomLinks";
 
 const headshot = "/images/lance-headshot.jpg";
@@ -13,9 +15,12 @@ export default function Home() {
   return (
     <>
       <HomeHero />
+      <WelcomeHero />
       <CategoryCards />
 
       <WhoIsLance />
+
+      <ThumbnailLinks />
 
       {/* Authority statement */}
       <section className="bg-navy text-cream">
