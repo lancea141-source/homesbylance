@@ -6,8 +6,8 @@ const THUMBNAILS = [
     key: "buyers",
     label: "Buyers Academy",
     image: "/images/thumbnails/buyers-academy.jpg",
-    href: "/series/academy",
-    external: false,
+    href: "https://www.youtube.com/playlist?list=PLBibnW-4Owew",
+    external: true,
   },
   {
     key: "sellers",

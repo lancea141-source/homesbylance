@@ -51,8 +51,8 @@ const PILLARS: Pillar[] = [
     label: "Local",
     href: "/series/lunch",
     children: [
-      { label: "Lunch with Lance", href: "/series/lunch" },
-      { label: "Jerky with Lance", href: "/series/jerky" },
+      { label: "Lunch with Lance", href: "https://www.youtube.com/playlist?list=PLG1es-OvltHUe2DKBtFTZdlWcta68L5UG" },
+      { label: "Jerky with Lance", href: "https://www.youtube.com/playlist?list=PLG1es-OvltHV8lTJpCj6on5k1Ryel5asU" },
       { label: "Peaches with Lance", href: "/series/peaches" },
       { label: "Boating with Lance", href: "/series/boating" },
       { label: "Neighborhoods", href: "/series/neighborhoods" },
