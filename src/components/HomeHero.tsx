@@ -7,17 +7,17 @@ export default function HomeHero() {
     <section className="w-full bg-white">
       <div className="max-w-6xl mx-auto px-5 sm:px-8 pt-10 sm:pt-16 pb-16 sm:pb-24 grid md:grid-cols-[1.15fr_0.85fr] gap-10 md:gap-16 items-center">
         <div className="order-2 md:order-1 text-center md:text-left">
-          <h1 className="font-display font-extrabold tracking-tight text-navy text-[12vw] leading-[0.98] sm:text-6xl md:text-7xl">
+          <h1 className="font-display font-semibold text-navy text-[11vw] leading-[1.05] sm:text-5xl md:text-6xl">
             Local with Lance
           </h1>
-          <p className="mt-5 text-lg sm:text-xl text-navy/70 max-w-lg mx-auto md:mx-0">
+          <p className="mt-4 text-lg sm:text-xl text-navy/70 max-w-lg mx-auto md:mx-0">
             Turning Real Estate Information into Better Decisions.
           </p>
 
           <div className="mt-8 h-px w-full max-w-lg bg-line mx-auto md:mx-0" />
 
           <p className="mt-8 text-navy/75 leading-relaxed max-w-lg mx-auto md:mx-0">
-            <span className="font-semibold text-navy">I&apos;m Lance Anderson.</span>{" "}
+            <span className="block font-display font-semibold text-2xl sm:text-3xl text-navy mb-3">I&apos;m Lance Anderson.</span>
             Whatever your real estate goals, I&apos;ll help you understand your
             options, navigate the complexities, and confidently make your next move.
           </p>

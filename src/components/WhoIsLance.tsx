@@ -7,7 +7,7 @@ export default function WhoIsLance() {
     <section id="who-is-lance" className="w-full bg-white border-t border-line">
       <div className="max-w-6xl mx-auto px-5 sm:px-8 py-16 sm:py-24 grid lg:grid-cols-[1.3fr_1fr] gap-10 lg:gap-16 items-center">
         <div>
-          <h2 className="font-display font-bold text-3xl sm:text-4xl text-navy mb-6">
+          <h2 className="font-display font-semibold text-3xl sm:text-4xl text-navy mb-6">
             Who Is Lance?
           </h2>
           <div className="space-y-5 text-navy/75 leading-relaxed">
@@ -37,7 +37,7 @@ export default function WhoIsLance() {
               />
             </div>
             <div>
-              <p className="font-display font-bold text-navy">3&times; Top 500 Realtor in Utah</p>
+              <p className="font-bold text-navy">3&times; Top 500 Realtor in Utah</p>
               <p className="text-sm text-navy/65">Recognized three consecutive years.</p>
             </div>
           </div>

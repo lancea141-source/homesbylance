@@ -1,28 +1,24 @@
 import type { Metadata } from "next";
-import { Fraunces, Public_Sans, Archivo } from "next/font/google";
+import { Source_Serif_4, Source_Sans_3 } from "next/font/google";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import BuildBanner from "@/components/BuildBanner";
 import MobileCallBar from "@/components/MobileCallBar";
 import "./globals.css";
 
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
+// v0.4 type system: Source Serif 4 (headlines) + Source Sans 3 (UI/body).
+// Source Serif 4 loads as a variable font with the optical-size axis so
+// large headlines automatically use the sharper display cut.
+const sourceSerif = Source_Serif_4({
+  variable: "--font-source-serif",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "900"],
+  axes: ["opsz"],
   style: ["normal", "italic"],
 });
 
-const publicSans = Public_Sans({
-  variable: "--font-public-sans",
+const sourceSans = Source_Sans_3({
+  variable: "--font-source-sans",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
-
-const archivo = Archivo({
-  variable: "--font-archivo",
-  subsets: ["latin"],
-  weight: ["600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -61,7 +57,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${fraunces.variable} ${publicSans.variable} ${archivo.variable} h-full antialiased`}
+      className={`${sourceSerif.variable} ${sourceSans.variable} h-full antialiased`}
     >
       <head>
         <script

@@ -88,7 +88,7 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-line">
       <div className="max-w-6xl mx-auto px-5 sm:px-8 flex items-center justify-between h-16">
-        <Link href="/" className="font-display font-extrabold text-lg tracking-tight text-navy">
+        <Link href="/" className="font-display font-semibold text-xl text-navy">
           Local with Lance
         </Link>
 

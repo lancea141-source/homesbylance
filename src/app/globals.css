@@ -24,8 +24,13 @@
   --color-line: var(--line);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-display: var(--font-archivo);
-  --font-sans: var(--font-public-sans);
+  --font-display: var(--font-source-serif);
+  --font-sans: var(--font-source-sans);
+}
+
+h1, h2, h3, .font-display {
+  font-optical-sizing: auto;
+  letter-spacing: -0.01em;
 }
 
 body {

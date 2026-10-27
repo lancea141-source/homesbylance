@@ -7,7 +7,7 @@ export default function CategoryCards() {
   return (
     <section className="w-full bg-white border-t border-line">
       <div className="max-w-6xl mx-auto px-5 sm:px-8 py-16 sm:py-20">
-        <h2 className="font-display font-bold text-2xl sm:text-3xl text-navy mb-8 text-center sm:text-left">
+        <h2 className="font-display font-semibold text-2xl sm:text-3xl text-navy mb-8 text-center sm:text-left">
           Where do you want to start?
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
@@ -31,7 +31,7 @@ export default function CategoryCards() {
               </div>
               <div className="px-5 py-5 flex-1">
                 <h3
-                  className="font-display font-bold text-base uppercase tracking-wide"
+                  className="font-sans font-bold text-sm uppercase tracking-[0.12em]"
                   style={{ color: cat.accent }}
                 >
                   {cat.label}
