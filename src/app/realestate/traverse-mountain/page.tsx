@@ -19,13 +19,13 @@ export default function TraverseMountain() {
       <div className="flex flex-wrap gap-4">
         <Link
           href="/realestate/market-report/traverse-mountain"
-          className="rounded-full bg-navy text-cream px-6 py-3 text-sm font-semibold hover:bg-terracotta transition-colors"
+          className="rounded-[3px] bg-navy text-white px-6 py-3 text-sm font-semibold hover:bg-terracotta transition-colors"
         >
           View Live Market Update
         </Link>
         <Link
           href="/series/neighborhoods"
-          className="rounded-full border border-navy/25 text-navy px-6 py-3 text-sm font-semibold hover:border-terracotta hover:text-terracotta transition-colors"
+          className="rounded-[3px] border border-navy/25 text-navy px-6 py-3 text-sm font-semibold hover:border-terracotta hover:text-terracotta transition-colors"
         >
           Watch Neighborhood Walkthroughs
         </Link>
