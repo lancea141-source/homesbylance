@@ -12,7 +12,7 @@ const PILLARS: Pillar[] = [
     href: "/realestate/homes",
     children: [
       { label: "Home Search", href: "/realestate/homes" },
-      { label: "Buyer's Academy", href: "/series/academy" },
+      { label: "Buyer's Academy", href: "https://www.youtube.com/playlist?list=PLBibnW-4Owew" },
       { label: "New Construction", href: "/series/builders" },
       { label: "Neighborhoods", href: "/series/neighborhoods" },
     ],
@@ -42,6 +42,7 @@ const PILLARS: Pillar[] = [
     href: "/realestate/market-report",
     children: [
       { label: "Market Reports", href: "/realestate/market-report" },
+      { label: "Market Report Videos", href: "https://www.youtube.com/playlist?list=PLK8tY-dftL7g" },
       { label: "Traverse Mountain", href: "/realestate/traverse-mountain" },
       { label: "Market Index", href: "https://lancea141-source.github.io/utah-housing-intelligence" },
       { label: "Utah Housing Intelligence", href: "https://lancea141-source.github.io/utah-housing-intelligence" },
@@ -51,6 +52,7 @@ const PILLARS: Pillar[] = [
     label: "Local",
     href: "/series/lunch",
     children: [
+      { label: "Living Local", href: "https://www.youtube.com/playlist?list=PLG1es-OvltHXeI8Orzz47LgHJ_1YvGW0p" },
       { label: "Lunch with Lance", href: "https://www.youtube.com/playlist?list=PLG1es-OvltHUe2DKBtFTZdlWcta68L5UG" },
       { label: "Jerky with Lance", href: "https://www.youtube.com/playlist?list=PLG1es-OvltHV8lTJpCj6on5k1Ryel5asU" },
       { label: "Peaches with Lance", href: "/series/peaches" },
