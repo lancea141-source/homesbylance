@@ -41,11 +41,9 @@ const THUMBNAILS = [
 
 export default function ThumbnailLinks() {
   return (
-    <section className="max-w-6xl mx-auto px-5 sm:px-8 py-16">
-      <p className="uppercase tracking-[0.2em] text-xs font-semibold text-olive mb-2 text-center sm:text-left">
-        Watch &amp; Learn
-      </p>
-      <h2 className="font-display text-3xl sm:text-4xl text-navy mb-10 text-center sm:text-left">
+    <section className="w-full bg-white border-t border-line">
+      <div className="max-w-6xl mx-auto px-5 sm:px-8 py-16 sm:py-20">
+      <h2 className="font-display font-bold text-2xl sm:text-3xl text-navy mb-8 text-center sm:text-left">
         Local with Lance on YouTube
       </h2>
 
@@ -56,7 +54,7 @@ export default function ThumbnailLinks() {
             href={t.href}
             target={t.external ? "_blank" : undefined}
             rel={t.external ? "noopener noreferrer" : undefined}
-            className="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-200 aspect-video"
+            className="group relative rounded-xl overflow-hidden border border-line hover:shadow-md transition-all duration-200 aspect-video"
           >
             <Image
               src={t.image}
@@ -67,6 +65,7 @@ export default function ThumbnailLinks() {
             />
           </Link>
         ))}
+      </div>
       </div>
     </section>
   );

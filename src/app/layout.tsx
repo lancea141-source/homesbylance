@@ -69,7 +69,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       </head>
-      <body className="min-h-full flex flex-col bg-cream text-navy">
+      <body className="min-h-full flex flex-col bg-white text-navy">
         <BuildBanner />
         <Nav />
         <main className="flex-1 pb-16 sm:pb-0">{children}</main>

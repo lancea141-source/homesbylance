@@ -2,6 +2,9 @@
 
 import { useEffect, useState } from "react";
 
+// Bump on every release.
+const BUILD_VERSION = "v0.4 · 2026-10-26";
+
 export default function BuildBanner() {
   const [loadedAt, setLoadedAt] = useState<string | null>(null);
 
@@ -15,8 +18,8 @@ export default function BuildBanner() {
   if (process.env.NEXT_PUBLIC_BUILD_MODE !== "true") return null;
 
   return (
-    <div className="w-full bg-terracotta text-cream text-center text-xs font-semibold uppercase tracking-wide py-1.5">
-      BUILD MODE &middot; {process.env.NEXT_PUBLIC_BUILD_VERSION}
+    <div className="w-full bg-navy text-white text-center text-[11px] font-semibold uppercase tracking-wide py-1.5">
+      BUILD MODE &middot; {BUILD_VERSION}
       {loadedAt ? <> &middot; loaded {loadedAt}</> : null}
     </div>
   );
