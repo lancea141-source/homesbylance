@@ -1,24 +1,23 @@
 import type { Metadata } from "next";
-import { Source_Serif_4, Source_Sans_3 } from "next/font/google";
+import { Barlow_Condensed, Barlow } from "next/font/google";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import BuildBanner from "@/components/BuildBanner";
 import MobileCallBar from "@/components/MobileCallBar";
 import "./globals.css";
 
-// v0.4 type system: Source Serif 4 (headlines) + Source Sans 3 (UI/body).
-// Source Serif 4 loads as a variable font with the optical-size axis so
-// large headlines automatically use the sharper display cut.
-const sourceSerif = Source_Serif_4({
-  variable: "--font-source-serif",
+// v0.4 type system: Barlow Condensed (headlines, matches YouTube thumbnails)
+// + Barlow (nav, body, buttons).
+const barlowCondensed = Barlow_Condensed({
+  variable: "--font-barlow-condensed",
   subsets: ["latin"],
-  axes: ["opsz"],
-  style: ["normal", "italic"],
+  weight: ["600", "700"],
 });
 
-const sourceSans = Source_Sans_3({
-  variable: "--font-source-sans",
+const barlow = Barlow({
+  variable: "--font-barlow",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -57,7 +56,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${sourceSerif.variable} ${sourceSans.variable} h-full antialiased`}
+      className={`${barlowCondensed.variable} ${barlow.variable} h-full antialiased`}
     >
       <head>
         <script

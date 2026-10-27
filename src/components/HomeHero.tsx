@@ -7,7 +7,7 @@ export default function HomeHero() {
     <section className="w-full bg-white">
       <div className="max-w-6xl mx-auto px-5 sm:px-8 pt-10 sm:pt-16 pb-16 sm:pb-24 grid md:grid-cols-[1.15fr_0.85fr] gap-10 md:gap-16 items-center">
         <div className="order-2 md:order-1 text-center md:text-left">
-          <h1 className="font-display font-semibold text-navy text-[11vw] leading-[1.05] sm:text-5xl md:text-6xl">
+          <h1 className="font-display font-bold text-navy text-[14vw] leading-[0.95] sm:text-6xl md:text-7xl">
             Local with Lance
           </h1>
           <p className="mt-4 text-lg sm:text-xl text-navy/70 max-w-lg mx-auto md:mx-0">
@@ -17,7 +17,7 @@ export default function HomeHero() {
           <div className="mt-8 h-px w-full max-w-lg bg-line mx-auto md:mx-0" />
 
           <p className="mt-8 text-navy/75 leading-relaxed max-w-lg mx-auto md:mx-0">
-            <span className="block font-display font-semibold text-2xl sm:text-3xl text-navy mb-3">I&apos;m Lance Anderson.</span>
+            <span className="block font-display font-bold text-3xl sm:text-4xl text-navy mb-3">I&apos;m Lance Anderson.</span>
             Whatever your real estate goals, I&apos;ll help you understand your
             options, navigate the complexities, and confidently make your next move.
           </p>
@@ -25,7 +25,7 @@ export default function HomeHero() {
           <div className="mt-8 flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
             <Link
               href="/realestate/contact"
-              className="rounded-full bg-terracotta text-white px-7 py-3.5 text-sm font-semibold hover:bg-navy transition-colors"
+              className="rounded-[3px] bg-terracotta text-white px-7 py-3.5 text-sm font-semibold hover:bg-navy transition-colors"
             >
               Let&apos;s Talk
             </Link>

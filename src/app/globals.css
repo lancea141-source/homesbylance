@@ -24,13 +24,12 @@
   --color-line: var(--line);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-display: var(--font-source-serif);
-  --font-sans: var(--font-source-sans);
+  --font-display: var(--font-barlow-condensed);
+  --font-sans: var(--font-barlow);
 }
 
-h1, h2, h3, .font-display {
-  font-optical-sizing: auto;
-  letter-spacing: -0.01em;
+.font-display {
+  letter-spacing: 0.005em;
 }
 
 body {

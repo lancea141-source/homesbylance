@@ -7,7 +7,7 @@ export default function CategoryCards() {
   return (
     <section className="w-full bg-white border-t border-line">
       <div className="max-w-6xl mx-auto px-5 sm:px-8 py-16 sm:py-20">
-        <h2 className="font-display font-semibold text-2xl sm:text-3xl text-navy mb-8 text-center sm:text-left">
+        <h2 className="font-display font-bold text-3xl sm:text-4xl text-navy mb-8 text-center sm:text-left">
           Where do you want to start?
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
@@ -17,7 +17,7 @@ export default function CategoryCards() {
               href={cat.href}
               target={cat.href.startsWith("http") ? "_blank" : undefined}
               rel={cat.href.startsWith("http") ? "noopener noreferrer" : undefined}
-              className="group flex flex-col rounded-xl overflow-hidden bg-white border border-line hover:border-navy/20 hover:shadow-md transition-all duration-200"
+              className="group flex flex-col rounded-[4px] overflow-hidden bg-white border border-line hover:border-navy/20 hover:shadow-md transition-all duration-200"
               style={{ borderTop: `3px solid ${cat.accent}` }}
             >
               <div className="relative h-40 sm:h-44 overflow-hidden">

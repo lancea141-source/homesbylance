@@ -43,7 +43,7 @@ export default function ThumbnailLinks() {
   return (
     <section className="w-full bg-white border-t border-line">
       <div className="max-w-6xl mx-auto px-5 sm:px-8 py-16 sm:py-20">
-      <h2 className="font-display font-semibold text-2xl sm:text-3xl text-navy mb-8 text-center sm:text-left">
+      <h2 className="font-display font-bold text-3xl sm:text-4xl text-navy mb-8 text-center sm:text-left">
         Local with Lance on YouTube
       </h2>
 
@@ -54,7 +54,7 @@ export default function ThumbnailLinks() {
             href={t.href}
             target={t.external ? "_blank" : undefined}
             rel={t.external ? "noopener noreferrer" : undefined}
-            className="group relative rounded-xl overflow-hidden border border-line hover:shadow-md transition-all duration-200 aspect-video"
+            className="group relative rounded-[4px] overflow-hidden border border-line hover:shadow-md transition-all duration-200 aspect-video"
           >
             <Image
               src={t.image}

@@ -88,7 +88,7 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-line">
       <div className="max-w-6xl mx-auto px-5 sm:px-8 flex items-center justify-between h-16">
-        <Link href="/" className="font-display font-semibold text-xl text-navy">
+        <Link href="/" className="font-display font-bold text-2xl text-navy">
           Local with Lance
         </Link>
 
@@ -141,7 +141,7 @@ export default function Nav() {
           </a>
           <Link
             href="/realestate/contact"
-            className="rounded-full bg-terracotta text-white px-5 py-2.5 text-sm font-semibold hover:bg-navy transition-colors"
+            className="rounded-[3px] bg-terracotta text-white px-5 py-2.5 text-sm font-semibold hover:bg-navy transition-colors"
           >
             Contact
           </Link>
@@ -205,7 +205,7 @@ export default function Nav() {
           <Link
             href="/realestate/contact"
             onClick={() => setMobileOpen(false)}
-            className="mt-4 rounded-full bg-terracotta text-white px-4 py-2.5 text-center font-semibold"
+            className="mt-4 rounded-[3px] bg-terracotta text-white px-4 py-2.5 text-center font-semibold"
           >
             Contact
           </Link>
