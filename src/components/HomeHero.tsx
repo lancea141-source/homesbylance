@@ -43,7 +43,7 @@ export default function HomeHero() {
           </div>
         </div>
 
-        <div className="order-1 md:order-2 relative w-full max-w-xs sm:max-w-sm mx-auto md:max-w-none aspect-[4/5] rounded-2xl overflow-hidden bg-navy/[0.03]">
+        <div className="order-1 md:order-2 relative w-full max-w-xs sm:max-w-sm mx-auto md:max-w-none aspect-[4/5] rounded-[4px] overflow-hidden bg-navy/[0.03]">
           <Image
             src="/images/lance-headshot.jpg"
             alt="Lance Anderson, Realtor"

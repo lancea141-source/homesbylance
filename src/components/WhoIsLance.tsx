@@ -26,7 +26,7 @@ export default function WhoIsLance() {
             </p>
           </div>
 
-          <div className="mt-8 flex items-center gap-4 rounded-xl border border-line p-4 max-w-md">
+          <div className="mt-8 flex items-center gap-4 rounded-[4px] border border-line p-4 max-w-md">
             <div className="relative h-16 w-16 shrink-0">
               <Image
                 src="/images/top500-badge.jpg"
@@ -43,7 +43,7 @@ export default function WhoIsLance() {
           </div>
         </div>
 
-        <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
+        <div className="relative rounded-[4px] overflow-hidden aspect-[4/3]">
           <Image
             src="/images/lance-family.jpg"
             alt="Lance Anderson with his family"
