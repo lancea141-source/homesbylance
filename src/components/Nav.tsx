@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 type NavLink = { label: string; href: string };
@@ -52,8 +51,8 @@ const PILLARS: Pillar[] = [
     label: "Local",
     href: "/series/lunch",
     children: [
-      { label: "Lunch with Lance", href: "/series/lunch" },
-      { label: "Jerky with Lance", href: "/series/jerky" },
+      { label: "Lunch with Lance", href: "https://www.youtube.com/playlist?list=PLG1es-OvltHUe2DKBtFTZdlWcta68L5UG" },
+      { label: "Jerky with Lance", href: "https://www.youtube.com/playlist?list=PLG1es-OvltHV8lTJpCj6on5k1Ryel5asU" },
       { label: "Peaches with Lance", href: "/series/peaches" },
       { label: "Boating with Lance", href: "/series/boating" },
       { label: "Neighborhoods", href: "/series/neighborhoods" },
@@ -87,26 +86,10 @@ export default function Nav() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 bg-cream/90 backdrop-blur border-b border-navy/10">
-      <a
-        href="tel:+18018605225"
-        className="block bg-navy text-center py-2 text-sm sm:text-base font-bold text-[#C0652A] hover:text-camel transition-colors"
-      >
-        (801) 860-5225
-      </a>
-      <div className="contour-rule" />
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-line">
       <div className="max-w-6xl mx-auto px-5 sm:px-8 flex items-center justify-between h-16">
-        <Link href="/" className="flex items-center gap-3 group">
-          <Image
-            src="/images/lance-headshot.jpg"
-            alt="Lance Anderson"
-            width={36}
-            height={36}
-            className="rounded-full border border-navy/15 object-cover object-top h-9 w-9"
-          />
-          <span className="font-display italic text-lg tracking-tight text-navy">
-            Local <span className="text-terracotta not-italic">with Lance</span>
-          </span>
+        <Link href="/" className="font-display font-bold text-2xl text-navy">
+          Local with Lance
         </Link>
 
         <nav ref={navRef} className="hidden md:flex items-center gap-1 text-sm font-medium">
@@ -133,7 +116,7 @@ export default function Nav() {
               </button>
 
               {openPillar === p.label && (
-                <div className="absolute top-full left-0 mt-1 min-w-[220px] rounded-xl border border-navy/10 bg-white shadow-lg py-2 z-50">
+                <div className="absolute top-full left-0 mt-2 min-w-[220px] rounded-lg border border-line bg-white shadow-md py-2 z-50">
                   {p.children.map((c) => (
                     <Link
                       key={c.label}
@@ -141,7 +124,7 @@ export default function Nav() {
                       target={c.href.startsWith("http") ? "_blank" : undefined}
                       rel={c.href.startsWith("http") ? "noopener noreferrer" : undefined}
                       onClick={() => setOpenPillar(null)}
-                      className="block px-4 py-2.5 text-sm text-navy/80 hover:bg-cream hover:text-terracotta transition-colors"
+                      className="block px-4 py-2.5 text-sm text-navy/80 hover:bg-navy/[0.03] hover:text-terracotta transition-colors"
                     >
                       {c.label}
                     </Link>
@@ -152,10 +135,13 @@ export default function Nav() {
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden md:flex items-center gap-5">
+          <a href="tel:+18018605225" className="text-sm font-semibold text-navy hover:text-terracotta transition-colors">
+            (801) 860-5225
+          </a>
           <Link
             href="/realestate/contact"
-            className="rounded-full bg-terracotta text-cream px-5 py-2.5 text-sm font-semibold hover:bg-navy transition-colors"
+            className="rounded-[3px] bg-terracotta text-white px-5 py-2.5 text-sm font-semibold hover:bg-navy transition-colors"
           >
             Contact
           </Link>
@@ -177,7 +163,7 @@ export default function Nav() {
       {mobileOpen && (
         <nav className="md:hidden flex flex-col px-5 pb-5 text-sm font-medium">
           {PILLARS.map((p) => (
-            <div key={p.label} className="border-b border-navy/10">
+            <div key={p.label} className="border-b border-line">
               <button
                 onClick={() => setOpenAccordion((v) => (v === p.label ? null : p.label))}
                 className="w-full flex items-center justify-between py-3 text-navy/80"
@@ -207,7 +193,7 @@ export default function Nav() {
                         setMobileOpen(false);
                         setOpenAccordion(null);
                       }}
-                      className="py-2 pl-3 text-navy/70 text-sm border-l-2 border-camel/40"
+                      className="py-2 pl-3 text-navy/70 text-sm border-l-2 border-line"
                     >
                       {c.label}
                     </Link>
@@ -219,7 +205,7 @@ export default function Nav() {
           <Link
             href="/realestate/contact"
             onClick={() => setMobileOpen(false)}
-            className="mt-4 rounded-full bg-terracotta text-cream px-4 py-2.5 text-center font-semibold"
+            className="mt-4 rounded-[3px] bg-terracotta text-white px-4 py-2.5 text-center font-semibold"
           >
             Contact
           </Link>

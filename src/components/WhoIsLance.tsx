@@ -1,61 +1,55 @@
 import Image from "next/image";
 
-const familyPhoto = "/images/lance-family.jpg";
-
+// v0.4 — bio trimmed to two paragraphs; Top 500 folded in as an inline badge
+// (standalone Top500 section removed from homepage).
 export default function WhoIsLance() {
   return (
-    <section id="who-is-lance" className="max-w-6xl mx-auto px-5 sm:px-8 py-20">
-      <p className="uppercase tracking-[0.2em] text-xs font-semibold text-olive mb-2">
-        The Person Behind The Data
-      </p>
-      <h2 className="font-display text-3xl sm:text-4xl mb-10 text-navy">
-        Who Is Lance?
-      </h2>
+    <section id="who-is-lance" className="w-full bg-white border-t border-line">
+      <div className="max-w-6xl mx-auto px-5 sm:px-8 py-16 sm:py-24 grid lg:grid-cols-[1.3fr_1fr] gap-10 lg:gap-16 items-center">
+        <div>
+          <h2 className="font-display font-bold text-4xl sm:text-5xl text-navy mb-6">
+            Who Is Lance?
+          </h2>
+          <div className="space-y-5 text-navy/75 leading-relaxed">
+            <p className="text-lg text-navy">
+              A Realtor, an engineer, a numbers guy, and a Utah local. I believe
+              better information leads to better decisions&mdash;but real estate
+              has always been about people, and I take care of my clients like
+              I do my own family.
+            </p>
+            <p>
+              My approach is simple: understand the numbers, ask the right
+              questions, explain the options, and find the solution that makes
+              the most sense for you. My clients start as people I&apos;m helping
+              buy or sell a home and end up becoming friends&mdash;and I&apos;m
+              here long after the transaction is over.
+            </p>
+          </div>
 
-      <div className="grid lg:grid-cols-[1.4fr_1fr] gap-10 lg:gap-14 items-start">
-        <div className="space-y-5 text-navy/80 leading-relaxed">
-          <p className="text-lg text-navy font-medium">
-            A Realtor, an engineer, a numbers guy, and a Utah local. I believe
-            better information leads to better decisions&mdash;but real estate
-            has always been about more than numbers to me. It&apos;s about
-            people, relationships, and taking care of my clients like I do my
-            own family.
-          </p>
-          <p>
-            I&apos;ve spent my career solving problems, building businesses,
-            connecting people, and helping others make big decisions with
-            confidence. This background shapes how I approach real estate
-            today: understand the numbers, ask the right questions, explain
-            the options, and find the solution that makes the most sense for
-            you.
-          </p>
-          <p>
-            For the past three years, I&apos;ve been recognized among
-            Utah&apos;s Top 500 Realtors, but what I value most are the
-            relationships that come from serving others. My clients start as
-            people I&apos;m helping buy or sell a home and end up becoming
-            friends. That&apos;s one of my favorite parts of this business.
-          </p>
-          <p>
-            Local with Lance brings those two sides of me together&mdash;the
-            engineer and numbers guy who loves digging into the market, and
-            the Realtor who genuinely cares about the people behind every
-            decision.
-          </p>
-          <p className="text-navy font-medium">
-            Because buying or selling a home is a big deal. I take the trust
-            you place in me personally&mdash;and I&apos;m here long after the
-            transaction is over.
-          </p>
+          <div className="mt-8 flex items-center gap-4 rounded-[4px] border border-line p-4 max-w-md">
+            <div className="relative h-16 w-16 shrink-0">
+              <Image
+                src="/images/top500-badge.jpg"
+                alt="Utah's Top 500 Realtors badge"
+                fill
+                sizes="64px"
+                className="object-contain"
+              />
+            </div>
+            <div>
+              <p className="font-bold text-navy">3&times; Top 500 Realtor in Utah</p>
+              <p className="text-sm text-navy/65">Recognized three consecutive years.</p>
+            </div>
+          </div>
         </div>
 
-        <div className="relative rounded-3xl overflow-hidden border border-navy/10 shadow-sm bg-cream min-h-[320px] sm:min-h-[420px] lg:min-h-[520px]">
+        <div className="relative rounded-[4px] overflow-hidden aspect-[4/3]">
           <Image
-            src={familyPhoto}
+            src="/images/lance-family.jpg"
             alt="Lance Anderson with his family"
             fill
             sizes="(min-width: 1024px) 33vw, 90vw"
-            className="object-contain"
+            className="object-cover"
           />
         </div>
       </div>

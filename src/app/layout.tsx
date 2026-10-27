@@ -1,28 +1,23 @@
 import type { Metadata } from "next";
-import { Fraunces, Public_Sans, Archivo } from "next/font/google";
+import { Barlow_Condensed, Barlow } from "next/font/google";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import BuildBanner from "@/components/BuildBanner";
 import MobileCallBar from "@/components/MobileCallBar";
 import "./globals.css";
 
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
+// v0.4 type system: Barlow Condensed (headlines, matches YouTube thumbnails)
+// + Barlow (nav, body, buttons).
+const barlowCondensed = Barlow_Condensed({
+  variable: "--font-barlow-condensed",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "900"],
-  style: ["normal", "italic"],
+  weight: ["600", "700"],
 });
 
-const publicSans = Public_Sans({
-  variable: "--font-public-sans",
+const barlow = Barlow({
+  variable: "--font-barlow",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-});
-
-const archivo = Archivo({
-  variable: "--font-archivo",
-  subsets: ["latin"],
-  weight: ["600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -61,7 +56,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${fraunces.variable} ${publicSans.variable} ${archivo.variable} h-full antialiased`}
+      className={`${barlowCondensed.variable} ${barlow.variable} h-full antialiased`}
     >
       <head>
         <script
@@ -69,7 +64,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       </head>
-      <body className="min-h-full flex flex-col bg-cream text-navy">
+      <body className="min-h-full flex flex-col bg-white text-navy">
         <BuildBanner />
         <Nav />
         <main className="flex-1 pb-16 sm:pb-0">{children}</main>
