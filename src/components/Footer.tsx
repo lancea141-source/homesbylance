@@ -51,7 +51,7 @@ export default function Footer() {
           <ul className="space-y-2 text-navy/75">
             <li><a href="tel:+18018605225" className="font-semibold text-navy hover:text-terracotta">(801) 860-5225</a></li>
             <li><a href="mailto:lancea141@gmail.com" className="hover:text-terracotta">lancea141@gmail.com</a></li>
-            <li><a href="https://www.youtube.com/@lance141" target="_blank" rel="noopener noreferrer" className="hover:text-terracotta">YouTube</a></li>
+            <li><a href="https://www.youtube.com/@LocalwithLance" target="_blank" rel="noopener noreferrer" className="hover:text-terracotta">YouTube</a></li>
             <li><a href="https://www.instagram.com/lancea141" target="_blank" rel="noopener noreferrer" className="hover:text-terracotta">Instagram</a></li>
             <li><a href="https://www.facebook.com/lance141" target="_blank" rel="noopener noreferrer" className="hover:text-terracotta">Facebook</a></li>
             <li><a href="https://www.tiktok.com/@lancea141" target="_blank" rel="noopener noreferrer" className="hover:text-terracotta">TikTok</a></li>
