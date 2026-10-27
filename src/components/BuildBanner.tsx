@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 // Bump on every release.
-const BUILD_VERSION = "v0.4.1 · 2026-10-27";
+const BUILD_VERSION = "v0.5 · 2026-10-27";
 
 export default function BuildBanner() {
   const [loadedAt, setLoadedAt] = useState<string | null>(null);

@@ -9,6 +9,14 @@ export type MarketArea = {
   historyUrl?: string;
   /** URL of the report's CMA adjustment rates page, if it publishes one. */
   cmaRatesUrl?: string;
+  /**
+   * v0.5: folder of this area inside the tm-market-update GitHub Pages site
+   * ("" = site root). When set, the website renders the report natively from
+   * the pipeline's data.json files instead of embedding the GitHub Pages page.
+   */
+  dataPath?: string;
+  /** YouTube playlist for this area's report videos. */
+  videoUrl?: string;
 };
 
 export const marketAreas: MarketArea[] = [
@@ -20,6 +28,8 @@ export const marketAreas: MarketArea[] = [
     reportUrl: "https://lancea141-source.github.io/tm-market-update/",
     historyUrl: "https://lancea141-source.github.io/tm-market-update/history/",
     cmaRatesUrl: "https://lancea141-source.github.io/tm-market-update/cma-rates/",
+    dataPath: "",
+    videoUrl: "https://www.youtube.com/playlist?list=PLK8tY-dftL7g",
   },
   {
     slug: "lehi",
@@ -27,6 +37,10 @@ export const marketAreas: MarketArea[] = [
     region: "Utah County, UT",
     blurb: "Silicon Slopes growth, new construction, and established neighborhoods.",
     reportUrl: "https://lancea141-source.github.io/tm-market-update/lehi/",
+    historyUrl: "https://lancea141-source.github.io/tm-market-update/lehi/history/",
+    cmaRatesUrl: "https://lancea141-source.github.io/tm-market-update/lehi/cma-rates/",
+    dataPath: "lehi/",
+    videoUrl: "https://www.youtube.com/playlist?list=PLK8tY-dftL7g",
   },
   {
     slug: "eagle-mountain",
@@ -39,6 +53,11 @@ export const marketAreas: MarketArea[] = [
     name: "Saratoga Springs",
     region: "Utah County, UT",
     blurb: "Lakeside living and new-build inventory on Utah Lake's west shore.",
+    reportUrl: "https://lancea141-source.github.io/tm-market-update/saratoga-springs/",
+    historyUrl: "https://lancea141-source.github.io/tm-market-update/saratoga-springs/history/",
+    cmaRatesUrl: "https://lancea141-source.github.io/tm-market-update/saratoga-springs/cma-rates/",
+    dataPath: "saratoga-springs/",
+    videoUrl: "https://www.youtube.com/playlist?list=PLK8tY-dftL7g",
   },
   {
     slug: "tooele",
